@@ -1,0 +1,46 @@
+IN DATOMIC, QUERIES HAPPENED INSIDE YOUR APPLICATION BOX.
+
+Query, communication and memory engine goes into an app = peer
+The db is local. (loose round trip server-client)
+Isolation from other app and servers in your system. (own processor)
+ 
+ Declarative language = joins are implicit
+ 
+ query language = Datalog (rules and patterns)
+
+Inside process obtain a queue of all transactions
+
+--Consistency
+Database presented to app as a value
+Data in storage is immutable
+
+--Programmability
+Transactions Rules Queries Results = data (list or maps)
+add types.
+queries invoke your code = because is local
+
+--Memory Records
+memory is associative and open
+records are enduring (not erase and overwrite)
+new facts = new spaces
+
+DATOMIC = DATABASE OF FACTS
+SINGLE STORAGE CONSTRUCT = DATOM [Entity, Attribute, Values, Transaction/Time]
+Attributes = definition (names, types, cardinality.)
+
+--Adaptability 
+Datomic represents data that are sparse or irregular or hierarchical data
+Encode single and multi valued attributes without intersection tables or records
+
+Datom = does not have any structural implication, every datom retains its transaction and a transaction are totally ordered also transactions are first class entities
+
+Possible to get the value of the database as of a different point of time or between two points in time.
+
+Facts are simpler than places, Declarative programming more power to the programmer.
+
+
+
+
+
+
+ 
